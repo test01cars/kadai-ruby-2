@@ -1,4 +1,4 @@
-#課題　Ruby基礎２　2021/8/19
+#課題　Ruby基礎２　2021/8/20
 
 #実行回数（整数）
 num_max = 100
@@ -7,18 +7,19 @@ num_max = 100
 def fizzbuzz(num)
   if (num % 3 == 0)
     if (num % 5 == 0)
-      puts "FizzBuzz"
+      result = "FizzBuzz"
     else
-      puts "Fizz"
+      result = "Fizz"
     end
   elsif (num % 5 == 0)
-    puts "Buzz"
+    result = "Buzz"
   else
-    puts num.to_s
+    result = num
   end
 end
 
+
 #メソッドの呼び出し
 (1..num_max).each do |count|
-  fizzbuzz(count)
+  puts fizzbuzz(count)
 end
